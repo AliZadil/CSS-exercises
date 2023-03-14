@@ -1,0 +1,36 @@
+.search {
+  background-color: white;
+  color: #383838;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2
+}
+.search:hover {
+    background-color: green;
+    color: white;
+}
+nav {
+  background-color: #383838;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}  
