@@ -1,36 +1,64 @@
-.search {
-  background-color: white;
-  color: #383838;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.hamburger {
-  display: none;
-}
-
-.hamburger button {
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 2
-}
-.search:hover {
-    background-color: green;
-    color: white;
-}
 nav {
-  background-color: #383838;
+  background-color: rgb(63, 63, 63);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 10px;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}  
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(63, 63, 63);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background-color: green;
+  color: white;
+}
+
+input[type="text"] {
+  border: none;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
