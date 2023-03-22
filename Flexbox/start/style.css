@@ -1,45 +1,38 @@
-.logo {
-    height: 200px;
-    width: 200px;
-    background: url(http://goo.gl/vyAs27);
+.sidebar {
+  background-color: rgb(247, 255, 210);
+  width: 200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+ul > li {
+  list-style-type: none;
+  flex: 1;
+}
 
-.sidebar {
-    width: 200px;
-    height: 100%;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  nav a {
-    color: #2b2b2b;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #2b2bb2;
-  }
-  
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .profile h3 {
-    margin: 0;
-  }
-  
+ul li a {
+  text-decoration: none;
+}
+
+li > a {
+  color: #2b2b2b;
+}
+
+li > a:hover {
+  color: #2b2bb2;
+  transition: all 0.3s;
+}
+
+.sidebar .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
