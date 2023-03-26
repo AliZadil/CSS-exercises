@@ -1,0 +1,21 @@
+img {
+    width: 350px;
+    height: auto;
+    padding: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:375px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:376px) and (max-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
