@@ -1,0 +1,16 @@
+body {
+    display: flex;
+}
+
+#yellow {
+    order: -1;
+}
+
+#red {
+    order:-1;
+}
+/* I don't know why red moves by 2. */
+
+#orange {
+    flex: 2;
+}
